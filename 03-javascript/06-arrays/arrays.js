@@ -11,7 +11,7 @@ var mixedArray = [8,"string", true];    // Array datatype is 'Object' and can ha
 
 // Important Point 3:
 mnths[0,5,11] = "January","May",'November';     // you can leave gaps in arrays
-console.log(mnths[1]);
+console.log(mnths[5]);
 console.log(mnths[11]);
 
 
@@ -31,32 +31,32 @@ Concepts
 =============================================================
                     At End      At Start    Anywhere
 =============================================================
-Remove Element      pop()       unshift()   splice()
-Add Element         push()      shift()     splice()
+Remove Element      pop()       shift()     splice()
+Add Element         push()      unshift()   splice()
 =============================================================
 */
 
 var days = [];
 
-days.push("Monday","Thursday","Wednesday");
+days.push("Monday","Thursday","Wednesday");         //  add three elements at the end of array 
 console.log(days);
 
-days.splice(1,1);
+days.splice(1,1);                                   //  start from 2nd element remove 1x element
 console.log(days);
 
-days.splice(1,0,"Tuesday");
+days.splice(1,0,"Tuesday");                         //  start from 2nd element remove 0 element and add 1x element
 console.log(days);
 
-days.push("Thursday","Friday","Saturday","Sunday","Monday");
+days.push("Thursday","Friday","Saturday","Sunday","Monday");    // add 5x elements at the end of array
 console.log(days);
 
-days.pop();
+days.pop();                                         //  remove 1x element at the end of array
 console.log(days);
 
-days.unshift("day");
+days.unshift("day");                                //  add element at the start of the array
 console.log(days);
 
-days.shift("day");
+days.shift("day");                                  //  remove element at the start of the array
 console.log(days);
 
 /*
